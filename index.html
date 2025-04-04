@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar Cores com DOM</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            transition: background 0.5s, color 0.5s;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Equipe 7</h1>
+    <button onclick="mudarCores()">Mude a cor</button>
+
+    <script>
+        function mudarCores() {
+            if (document.body.style.backgroundColor === "red") {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            } else {
+                document.body.style.backgroundColor = "red";
+                document.body.style.color = "white";
+            }
+        }
+    </script>
+</body>
+</html>
